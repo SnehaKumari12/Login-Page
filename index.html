@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOgin Form</title>
+	<style>
+	label{
+		color:red;
+	}
+	 #form{
+ 			width: 50%;
+			padding:5%;
+			box-shadow:0px 0px 3px 2px #0095ff;
+			margin-left:15%;
+			margin-top: 5%;
+	}
+
+	#inputdesign{
+		margin-top: 2%;
+		width: 45%;
+	    height: 30px;
+		border-radius: 5px;
+		font-size: 15px;
+		padding: 2%;
+		margin-bottom: 5%;
+}
+#btn{
+	width: 15%;
+	height: 35px;
+	background-color:#0095ff;
+	color: #fff;
+	border: 1px solid #fff;
+	float: right;
+}
+</style>
+</head>
+<body>
+	<FORM> 
+	    <div id=form >
+        <h1 style="text-align:center;color:rgb(255, 127, 187);">Register here</h1>
+        <pre>
+
+
+		<label>Name*</label>
+		<input type="text">
+		
+
+		<label>Email Address*</label>
+		<input type="text" class="inputdesign" id="email" />
+
+		<label>password*</label>
+		<input type="password" class="inputdesign"id="password"/>
+
+
+		<label>address</label>
+		<textarea col:"15" rows="15"></textarea>
+
+		<input type="button" onclick="Login()" id="btn" value="login">    
+        </pre>
+		</div>
+	</FORM>
+<script>
+	function Login(){
+		var email=document.getElementById("email").value;
+		 var password=document.getElementById("password").value;
+
+		 if(email===""|| email == null){
+			alert("please enter your email address");
+		 }
+		else if(password === "" || password == null){
+			alert ("please enter your password");
+		}
+		else{alert("login Sucessfull")
+	}
+
+	}
+</script>
+</body>
+ 
+</html>
